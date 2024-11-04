@@ -11,13 +11,12 @@
         <h1>Silicon Club</h1>
         <nav>
             <a href="#request">Material Request</a>
-            <a href="#recent-requests">Recent Requests</a>
         </nav>
     </header>
     <main>
         <section id="request">
             <h2>Request Materials</h2>
-            <form id="requestForm" action="https://formspree.io/f/xldejyld" method="POST">
+            <form id="requestForm" action="https://formspree.io/f/xldejyld" method="POST" enctype="multipart/form-data">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -38,13 +37,6 @@
 
                 <button type="submit">Submit Request</button>
             </form>
-        </section>
-
-        <section id="recent-requests">
-            <h2>Recent Requests</h2>
-            <div id="requestsList">
-                <!-- Recent requests will be displayed here -->
-            </div>
         </section>
     </main>
     <footer>
