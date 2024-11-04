@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silicon - Material Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Silicon Club</h1>
+        <nav>
+            <a href="#request">Material Request</a>
+            <a href="#recent-requests">Recent Requests</a>
+        </nav>
+    </header>
+    <main>
+        <section id="request">
+            <h2>Request Materials</h2>
+            <form id="requestForm" action="https://formspree.io/f/xldejyld" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="year">Year:</label>
+                <select id="year" name="year" required>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                </select>
+
+                <label for="section">Section:</label>
+                <input type="text" id="section" name="section" required>
+
+                <label for="file">Upload .txt File:</label>
+                <input type="file" id="file" name="file" accept=".txt" required>
+                <p class="note">contact directly if u think ur project needs funding</p>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <section id="recent-requests">
+            <h2>Recent Requests</h2>
+            <div id="requestsList">
+                <!-- Recent requests will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Silicon Club. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
