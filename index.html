@@ -17,13 +17,15 @@
         <section id="request">
             <h2>Request Materials</h2>
             <form id="requestForm" action="https://formspree.io/f/xldejyld" method="POST" enctype="multipart/form-data">
+                
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required style="width: 300px;">
+                <input type="text" id="name" name="name" required style="width: 100%; padding-right: 20px; box-sizing: border-box;">
+                
                 <label for="SRN">SRN:</label>
-                <input type="text" id="SRN" name="SRN" required>
+                <input type="text" id="SRN" name="SRN" required style="width: 100%; padding-right: 20px; box-sizing: border-box;">
                 
                 <label for="year">Year:</label>
-                <select id="year" name="year" required>
+                <select id="year" name="year" required style="width: 100%; box-sizing: border-box;">
                     <option value="1st Year">1st Year</option>
                     <option value="2nd Year">2nd Year</option>
                     <option value="3rd Year">3rd Year</option>
@@ -31,18 +33,19 @@
                 </select>
 
                 <label for="section">Section:</label>
-                <input type="text" id="section" name="section" required>
+                <input type="text" id="section" name="section" required style="width: 100%; padding-right: 20px; box-sizing: border-box;">
 
                 <label for="idea">Type your idea:</label>
-                <textarea id="idea" name="idea" required></textarea>
+                <textarea id="idea" name="idea" required style="width: 100%; padding-right: 20px; box-sizing: border-box;"></textarea>
+                
                 <p class="note">contact directly if u think ur project needs funding</p>
-
+                
                 <button type="submit">Submit Request</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; pesu>iit Bengaluru </p>
+        <p>&copy; pesu&gt;iit Bengaluru</p>
     </footer>
     <script src="script.js"></script>
 </body>
