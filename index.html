@@ -36,7 +36,8 @@
                 <input type="text" id="section" name="section" required style="width: 100%; padding-right: 20px; box-sizing: border-box;">
 
                 <label for="idea">Type your idea:</label>
-<textarea id="idea" name="idea" required style="width: 100%; padding-right: 20px; box-sizing: border-box; height: 130px;"></textarea>
+<label for="idea">Type your idea:</label>
+<textarea id="idea" name="idea" required style="width: 100%; padding-right: 20px; box-sizing: border-box; min-height: 120px; resize: vertical;"></textarea>
 
 <script>
     document.getElementById("idea").placeholder = 
@@ -46,7 +47,21 @@
         "Estimated time you'll take:\n" +
         "Mention others you will include in this project\n\n" +
         "[this is the format u guys need to use]";
+
+    // Function to adjust the height of the textarea
+    function adjustHeight() {
+        const textarea = document.getElementById("idea");
+        textarea.style.height = 'auto'; // Reset height
+        textarea.style.height = textarea.scrollHeight + 'px'; // Set new height based on content
+    }
+
+    // Adjust height on input
+    document.getElementById("idea").addEventListener("input", adjustHeight);
+
+    // Initial adjustment for placeholder
+    adjustHeight();
 </script>
+
 
 
                 
