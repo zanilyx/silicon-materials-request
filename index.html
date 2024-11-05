@@ -36,7 +36,19 @@
                 <input type="text" id="section" name="section" required style="width: 100%; padding-right: 20px; box-sizing: border-box;">
 
                 <label for="idea">Type your idea:</label>
-                <textarea id="idea" name="idea" required style="width: 100%; padding-right: 20px; box-sizing: border-box; height: 100px;"></textarea>
+<textarea id="idea" name="idea" required style="width: 100%; padding-right: 20px; box-sizing: border-box; height: 120px;"></textarea>
+
+<script>
+    document.getElementById("idea").placeholder = 
+        "Project idea:\n" +
+        "Description:\n" +
+        "Components required:\n" +
+        "Estimated time you'll take:\n" +
+        "Mention others you will include in this project\n\n" +
+        "[this is the format u guys need to use]";
+</script>
+
+
                 
                 <p class="note">contact directly if u think ur project needs funding</p>
                 
